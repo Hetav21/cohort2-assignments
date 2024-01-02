@@ -5,7 +5,7 @@
 */
 
 function strSort(str){
-  return str.split().sort().join();
+  return str.toUpperCase().split("").sort().join();
 }
 
 function isAnagram(str1, str2) {
