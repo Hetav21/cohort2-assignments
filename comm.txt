@@ -1,0 +1,8 @@
+npx jest ./tests/<file-name>.test.js 
+from 0x-js
+
+git remote add upstream <original-assignment URL>
+git fetch upstream
+git merge upstream/master
+git rebase upstream/master
+git push -f origin head
