@@ -12,7 +12,7 @@ try {    const token = req.headers.authorization;
 
     const decodedValue = jwt.verify(jwtToken, secret["JWT_SECRET"]);
 
-    if(decodedValue){
+    if(decodedValue.username){
         next()
     } else {
         res.status(403).json({ msg: "Authentication Error"}); 
